@@ -1,0 +1,18 @@
+CRIANDO UM NOVO USUÁRIO
+	useradd lucas
+		-m adiciona pasta na home
+		-c comentário sobre usuário, ou nome dele
+		useradd lucas -m -c "Lucas de Martino Santos"
+	CRIANDO USUÁRIO COM DEFINIÇÃO DE SHELL
+		-chsh -s /bin/bash lucasm 	 
+	useradd lucas -m -c "Lucas de Martino Santos" -s /bin/bash
+
+APAGANDO USUARIO
+	userdel lucas
+
+ATRELANDO SENHA A USUÁRIO
+	passwd lucas
+
+ADCIONANDO SHEL AO USUÁRIO
+		retorne ao usuário root
+	

@@ -1,0 +1,10 @@
+PERMISSÕES PARA GRUPOS
+fdad3413b750a0a24f47eae2899f41ed22292cc5d88496ee8fc0d4919fac24bde554b7541c7139455366e1133d4fcadcb1c633437c6cc0fec93bab0bbbb559dd
+
+chown usuario:grupo diretorio|arquivo
+
+ALTRANDO AS PERMISSÕES DE UM ARQUIVO/DIRETÓRIO
+ chmod 750 diretório(dono,grupo,outros)
+	( leitur(R) 4;
+	  Gravação(W) 2;
+	  Execução(X) 1.) soma para permissão 

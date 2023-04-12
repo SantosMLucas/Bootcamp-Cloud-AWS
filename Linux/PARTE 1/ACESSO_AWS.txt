@@ -1,0 +1,11 @@
+ubuntu_linux_A.pem
+3.135.182.35
+para acessar a maquina remotamente de um terminal linux, navegar até o diretório onde está o certtificado :
+COMANDO: ssh -i CETRTIFICADO ubuntu_linux_A.pem USUARIO demar@ IP 3.135.182.35
+ssh -i ubuntu_linux_A.pem ubuntu@3.135.182.35
+
+para alterar as permissões do arquivo(certificado):
+sudo chmod 600 ubuntu_linux_A.pem
+
+Qual comando é utilizado para instalar o serviço openssh? sudo apt-get install openssh-server
+

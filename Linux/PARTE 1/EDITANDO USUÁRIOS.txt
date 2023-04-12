@@ -1,0 +1,5 @@
+EDITANDO USUÁRIOS
+ usermod guest ...comando desejado
+	usermod guest -s /bin/bash
+ADCIONANDO EXPIRAÇÃO A SENHA
+	passwd guest -e Data opcional

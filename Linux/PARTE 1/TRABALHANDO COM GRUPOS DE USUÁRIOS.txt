@@ -1,0 +1,22 @@
+TRABALHANDO COM GRUPOS DE USUÁRIOS
+checando grupos
+ cd /
+ cat etc/group
+
+ADCIONANDO GRUPOS
+usermod  -G NomeGrupo lucas
+
+REMOVENDO DOS GRUPOS
+	usermod -G nomeGrupo
+quando específicado o comando de troca sai de grupos não específicados
+
+	gpasswd -d Usuário grupo
+
+CRIANDO GRUPOS
+	groupadd GRP_ADM
+
+DELETANDO GRUPOS
+	groupadd GRP_ADM
+
+CRIANDO USUÁRIO COM GRUPO
+useradd -G GRP_ADM

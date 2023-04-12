@@ -1,0 +1,57 @@
+Logando no servidor: 
+	sudo ssh -i ubuntu_linux_A.pem ubuntu@3.135.182.35
+
+sudo ssh -i "ubuntu_linux_A.pem" ubuntu@ec2-3-137-162-97.us-east-2.compute.amazonaws.com
+
+Logando como root:
+	sudo passwd root  Altera a senha de usuário existente.
+	su  Digete a senha para mudar para um super usuário
+	su Nome do usuário para sair do modo administrador
+
+listando ip da maquina
+ ip a
+
+Listando diretórios e arquivos:
+	ls 
+	ls -l
+	ls -a exibe arquivos ocultos
+	ls m?g* 
+	ls teste[1-3]*
+	ls teste[1-3]*
+		teste1.txt  teste2.txt  teste3.txt                                                                                      	ls teste[1,3]*
+		teste1.txt  teste3.txt    
+	ls | more 
+
+Trocando de diretórios:
+	cd ~ direto para a pasta de usuário
+
+Criando diretórios:
+	mkdir
+
+Removendo diretórios:
+	rmdir
+
+Criando arquivos:
+	touch 'nome do arquivo'
+
+Procurando arquivos:
+	find -name 'teste*'
+
+Removendo arquivos:
+	rm 'nome do arquivo'
+	rm teste[1-3]* 
+	rm teste[4,5]* 
+
+Ver conteúdo de arquivo texto:
+	cat Diretório mais nome do arquivo
+
+Editar um arquivo é necessário um editor de texto(nano)
+sendo possível navegar com o cursor e escrever no arquivo
+Após alterar um arquivo de serviço(*ini) é necessário dar um reboot no sistema, ou reiniciar o serviço:
+	sudo nano /etc/ssh/sshd_config 
+	para sair ctrl+x
+	para salvar ctrl+o
+	
+
+reiniciando serviços
+	systemctl status sshd 

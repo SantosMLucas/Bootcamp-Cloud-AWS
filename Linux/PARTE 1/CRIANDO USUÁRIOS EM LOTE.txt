@@ -1,0 +1,23 @@
+CRIANDO USUÁRIOS EM LOTE
+
+criando usuário com senha em uma linha:
+ useradd convidado1 -c "convidado" -s /bin/ssh -m -p $(openssl passwd senha)
+
+criando scrypt para criar usuários:
+criar pasta para agrupar os scripts: 
+	mkdir /scripts
+criar arquivo com instruções
+	nano criaruser.sh
+no arquivo:
+#!/bin/bash                                                                                                                                                                                                                               useradd guest10 -c "usuario convidado" -s /bin/bash -m -p $(openssl passwd 122118)                                   passwd guest10 -e 
+	
+crtl+o para salvar 
+crtl+x para sair             
+
+Permissões para o arquivo 
+     chmod +x criar_user.sh  
+para executa-lo:    
+./criar_user.sh 
+
+verificando os arquivos dos usuários:
+cat /etc/passwd                                                                                      

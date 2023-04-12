@@ -1,0 +1,11 @@
+Trabalhando com vi para editar arquivos de textos:
+	vi 'nome do arquivo'
+
+Caso o arquivo exista ele o abre, caso contrário cria o mesmo.
+
+Para editar o arquivo necessário apertar a tecla 
+	i
+, mudando para o modo insert
+
+para abiri o menu de edição:
+	ESC :w(write)q(quite)

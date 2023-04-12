@@ -1,0 +1,23 @@
+Retorna lista de comandos usados por usuário:
+	history
+Para executar um comando
+	!history 185
+Executando ultimo comando 
+	!!
+buscando determinando comando
+ 	!?dat?
+buscando comandos efeuados:
+	history grep termmo "buscado"
+buscando comando com data e hora e execução:
+	setar variável de ambiente:
+	export HISTTIMEFORMAT="%c" 
+limpando histórico
+	history -c temporário
+	set +o history para não salvar os comandos efetuados 
+	set -o history 
+trocando quantidade de comandos salvos
+	trocar para a pasta do usuário cd ~
+	ls -a 
+	cat .bashrc 
+	nano .bashrc
+	trocar quandidade de comandos salvos
