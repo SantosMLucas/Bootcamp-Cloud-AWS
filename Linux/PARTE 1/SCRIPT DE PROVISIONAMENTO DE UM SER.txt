@@ -1,0 +1,24 @@
+SCRIPT DE PROVISIONAMENTO DE UM SERVIDOR WEB
+
+
+mkdir scripts2
+cd 	scripts2
+nano scripty-iac2.sh
+
+#!/bin/bash
+echo "atualizando o servidor"
+apt-get update
+aptget upgrade -y
+apt-get install apache2 -y
+apt-get install unzip -y
+
+echo "Baixando e Copiando os arquivos da aplicação"
+cd /tmp
+wget https://github.com/denilsonbonatti/linux-site-dio/archive/refs/heads/main.zip
+unzip main.zip
+cd linux-site-dio-main
+cp -R * /var/www/html/
+
+
+chmod +x scripty-iac2.sh
+./scripty-iac2.sh
